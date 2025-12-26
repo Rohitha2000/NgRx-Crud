@@ -1,0 +1,17 @@
+.mdc-card{
+    margin: 2%;
+}
+
+button{
+    margin: 2px;
+}
+.primary{
+    background-color: #005cbb !important;
+    color: white !important;
+    margin-right: 10px;
+    padding: 12px;
+    border-radius: 4px !important;
+    &:hover{
+        background-color: #005cbb !important;
+    }
+}

@@ -1,0 +1,47 @@
+
+mat-card{
+    margin: 2%;
+    text-align: left;
+}
+
+.mat-mdc-form-field {
+    width: 98%;
+    margin: 1%;
+}
+.mat-50{
+    width: 48%;
+    margin: 1%;
+}
+.div-50{
+    width: 48%;
+    margin: 1%;
+    display: inline;
+}
+
+button{
+    margin: 2px;
+}
+
+
+.primary{
+    background-color: #005cbb !important;
+    color: white !important;
+    margin-right: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px !important;
+    &:hover{
+        background-color: #005cbb !important;
+    }
+}
+.danger{
+    background-color: #cd3907 !important;
+    color: white !important;
+    margin-right: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 4px !important;
+    &:hover{
+        background-color: #cd3907 !important;
+    }
+}

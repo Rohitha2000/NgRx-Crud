@@ -1,0 +1,164 @@
+{
+  "associate": [
+    {
+      "id": 1,
+      "name": "Ramesh Kumar",
+      "email": "ramesh@in.com",
+      "phone": "899089898",
+      "group": "level1",
+      "address": "No 2\nRamraj street, chennai, road",
+      "type": "SUPPLIER",
+      "status": true
+    },
+    {
+      "id": 4,
+      "name": "James",
+      "email": "james@in.com",
+      "phone": "55566",
+      "group": "level2",
+      "address": "hj",
+      "type": "SUPPLIER",
+      "status": true
+    },
+    {
+      "id": 5,
+      "name": "Ramesh Kumar",
+      "email": "ramesh@inc.com",
+      "phone": "899089898",
+      "group": "level2",
+      "address": "No 2\nRamraj street, chennai test\nIndai",
+      "type": "SUPPLIER",
+      "status": true
+    },
+    {
+      "id": 6,
+      "name": "Richa",
+      "email": "richa@in.com",
+      "phone": "55566",
+      "group": "level2",
+      "address": "hj",
+      "type": "SUPPLIER",
+      "status": true
+    },
+    {
+      "id": 7,
+      "name": "Rohitha",
+      "email": "rohitha@gmail.com",
+      "phone": "9398706562",
+      "associategroup": "level1",
+      "address": "miyapur, hyderbad",
+      "type": "CUSTOMER",
+      "status": true
+    },
+    {
+      "id": 9,
+      "name": "sowmya",
+      "email": "sg@gmail.com",
+      "phone": "9133657858",
+      "group": "level1",
+      "address": "miyapur",
+      "type": "CUSTOMER",
+      "status": true
+    }
+  ],
+  "customer": [
+    {
+      "id": 1,
+      "name": "Ramesh Kumar",
+      "email": "aramesh@in.com",
+      "phone": "899089898",
+      "group": "level1",
+      "address": "No 2\nRamraj street, chennai, road",
+      "type": "SUPPLIER",
+      "status": true
+    },
+    {
+      "id": 2,
+      "name": "aorohi",
+      "email": "azdasd",
+      "phone": "43657568658",
+      "group": "level1",
+      "address": "afdgsbhdfnbdfbdfbdfbhdfbhd",
+      "type": "CUSTOMER",
+      "status": true
+    }
+  ],
+  "user": [
+    {
+      "username": "admin",
+      "password": "abcd",
+      "name": "Adminuser",
+      "email": "admin@gmaill.com",
+      "phone": "908765654",
+      "gender": "female",
+      "role": "admin",
+      "status": true,
+      "id": 1
+    },
+    {
+      "username": "testuser",
+      "password": "test123",
+      "name": "Test User 1",
+      "email": "testuser@gmail.com",
+      "phone": "9809876543",
+      "gender": "male",
+      "role": "manager",
+      "status": true,
+      "id": 2
+    }
+  ],
+  "role": [
+    {
+      "code": "admin",
+      "name": "Admin"
+    },
+    {
+      "code": "manager",
+      "name": "Manager"
+    },
+    {
+      "code": "user",
+      "name": "User"
+    }
+  ],
+  "menu": [
+    {
+      "code": "associate",
+      "Name": "Associate"
+    },
+    {
+      "code": "customer",
+      "Name": "Customer"
+    },
+    {
+      "code": "user",
+      "Name": "User"
+    }
+  ],
+  "roleaccess": [
+    {
+      "role": "admin",
+      "menu": "associate"
+    },
+    {
+      "role": "admin",
+      "menu": "customer"
+    },
+    {
+      "role": "admin",
+      "menu": "user"
+    },
+    {
+      "role": "manager",
+      "menu": "associate"
+    },
+    {
+      "role": "manager",
+      "menu": "customer"
+    },
+    {
+      "role": "user",
+      "menu": "associate"
+    }
+  ]
+}
