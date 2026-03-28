@@ -1,14 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UserlistComponent } from './userlist.component';
+import { provideMockStore } from '@ngrx/store/testing';
 
 describe('UserlistComponent', () => {
   let component: UserlistComponent;
   let fixture: ComponentFixture<UserlistComponent>;
+  const initialState={};
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UserlistComponent]
+      imports: [UserlistComponent],
+        providers:[
+                      provideMockStore({ initialState }) ,
+              ]
     })
     .compileComponents();
 

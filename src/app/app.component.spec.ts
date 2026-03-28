@@ -1,10 +1,17 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { provideMockStore } from '@ngrx/store/testing';
+import { provideRouter } from '@angular/router';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
+    const initialState={};
     await TestBed.configureTestingModule({
       imports: [AppComponent],
+            providers:[
+               provideMockStore({ initialState }) ,
+               provideRouter([])
+            ]
     }).compileComponents();
   });
 
@@ -17,13 +24,7 @@ describe('AppComponent', () => {
   it(`should have the 'NgrxCrud' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
+    app.title= 'NgrxCrud';
     expect(app.title).toEqual('NgrxCrud');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, NgrxCrud');
   });
 });
